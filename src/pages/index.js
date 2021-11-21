@@ -3,7 +3,7 @@ import NextSeo from 'components/next-seo';
 import Header from 'components/header/header';
 import styles from 'styles/Home.module.css';
 
-export default function Home() {
+const Home = () => {
   return (
     <Fragment>
       <NextSeo />
@@ -17,4 +17,5 @@ export default function Home() {
       </div>
     </Fragment>
   );
-}
+};
+export default Home;
