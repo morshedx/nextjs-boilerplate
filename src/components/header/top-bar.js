@@ -1,22 +1,22 @@
 import Link from 'next/link';
-import { Container } from '@chakra-ui/react';
+import { Container, Flex } from '@chakra-ui/react';
 
 const TopBar = () => {
   return (
     <div>
       <Container>
-        <ul>
+        <Flex as="ul" sx={{ listStyle: 'none', gap: 30 }}>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
           <li>
             <Link href="/contact">
               <a>Contact</a>
             </Link>
           </li>
-          <li>
-            <Link href="/warranty-policy">
-              <a>Warranty Policy</a>
-            </Link>
-          </li>
-        </ul>
+        </Flex>
       </Container>
     </div>
   );

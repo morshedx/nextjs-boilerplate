@@ -10,7 +10,7 @@ const Seo = () => {
       additionalLinkTags={[
         {
           rel: 'icon',
-          href: 'https://motionview.com.bd/wp-content/uploads/2021/06/cropped-mi-32x32.jpg',
+          href: '/favicon-32x32.jpg',
         },
       ]}
     />
