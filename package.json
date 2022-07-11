@@ -2,12 +2,18 @@
   "name": "nextjs-boilerplate",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3333",
+    "dev": "next dev -p 3030",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/colors": "latest",
+    "@radix-ui/react-accordion": "latest",
+    "@radix-ui/react-icons": "latest",
+    "@stitches/react": "latest",
+    "classnames": "^2.3.1",
+    "framer-motion": "^6.4.3",
     "next": "12.2.1",
     "next-seo": "^5.4.0",
     "react": "18.2.0",

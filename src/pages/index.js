@@ -1,14 +1,10 @@
-import { Fragment } from 'react';
-import NextSeo from 'components/next-seo';
-import Header from 'components/header/header';
+import Accordion from 'components/ui/accordion';
 
-const Home = () => {
+// Your app...
+export default function HomePage() {
   return (
-    <Fragment>
-      <NextSeo />
-      <Header />
-      <h1 className="text-3xl font-bold underline">Hello world! with TailwindCSS</h1>
-    </Fragment>
+    <div className="container mx-auto bg-slate-400 p-20 mt-20 ">
+      <Accordion className="max-w-xs mx-auto bg-white shadow-md rounded-md" />
+    </div>
   );
-};
-export default Home;
+}

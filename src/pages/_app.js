@@ -1,10 +1,13 @@
 import { DefaultSeo } from 'next-seo';
+import Layout from 'components/layout';
 import 'styles/globals.css';
 
 const App = ({ Component, pageProps }) => {
   return (
     <>
       <DefaultSeo
+        title="Next js Boilerplate with tailwindcss"
+        description="This is an nextjs Boilerplate with tailwindcss"
         openGraph={{
           type: 'website',
           locale: 'en_US',
@@ -12,7 +15,9 @@ const App = ({ Component, pageProps }) => {
           site_name: 'MotionView',
         }}
       />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 };
