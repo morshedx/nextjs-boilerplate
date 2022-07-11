@@ -1,4 +1,5 @@
 import { DefaultSeo } from 'next-seo';
+import Layout from 'layout';
 import 'styles/globals.css';
 
 const App = ({ Component, pageProps }) => {
@@ -12,7 +13,9 @@ const App = ({ Component, pageProps }) => {
           site_name: 'MotionView',
         }}
       />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 };
